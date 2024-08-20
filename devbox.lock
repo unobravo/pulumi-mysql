@@ -1,0 +1,165 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "curl@8": {
+      "last_modified": "2024-08-18T21:16:56Z",
+      "resolved": "github:NixOS/nixpkgs/9aa35efbea27d320d0cdc5f922f0890812affb60#curl",
+      "source": "devbox-search",
+      "version": "8.9.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/c8zjxnirrs9w62rh5mnzd54rx9w31zai-curl-8.9.0-bin"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/kl8rbmykp9qxr9kf0kxbm17zkca3v370-curl-8.9.0-bin"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/kh8mmpqim42chc9s12h7hk34v5lnws32-curl-8.9.0-bin"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/fv44n5lc7kgz8ivpqzyd857whggdfy17-curl-8.9.0-bin"
+        }
+      }
+    },
+    "dotnet-sdk@6.0.": {
+      "last_modified": "2024-08-14T11:41:26Z",
+      "resolved": "github:NixOS/nixpkgs/0cb2fd7c59fed0cd82ef858cbcbdb552b9a33465#dotnet-sdk",
+      "source": "devbox-search",
+      "version": "6.0.424",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/01ymiv4agl61bcpqmdh08g76miw27djm-dotnet-sdk-6.0.424"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/mkppwgbpbaq1plnm9f041gwdpi12810f-dotnet-sdk-6.0.424"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/3073s410xcgmlx232w2i1a7k0330kvsx-dotnet-sdk-6.0.424"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/5sp0bkzhxydbab6nw1bq0q6yqgn1q8zw-dotnet-sdk-6.0.424"
+        }
+      }
+    },
+    "go@1.21.": {
+      "last_modified": "2024-08-18T12:44:29Z",
+      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#go_1_21",
+      "source": "devbox-search",
+      "version": "1.21.13",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/zqc8pv978862fp5pyrmyq5n7pcmiyfiv-go-1.21.13"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/3vmvbrqk42nff6bijvjz3wj2042784da-go-1.21.13"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/vmxhj00sz0bn6yji5ir70ydpkvkynadn-go-1.21.13"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/131jdz3f22v37qj0a5r31dcpck3b8421-go-1.21.13"
+        }
+      }
+    },
+    "gradle_7@7.6": {
+      "last_modified": "2024-08-18T12:44:29Z",
+      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#gradle_7",
+      "source": "devbox-search",
+      "version": "7.6.4",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/rff8jfbzya8308zbf4k9wv6vhm13jdks-gradle-7.6.4"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/709zzicrdc1zyjl1krzrs24jjz0g3xdk-gradle-7.6.4"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/74qizv3r3i35v8azi2y8zmwsc3jcrrp0-gradle-7.6.4"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/wkz047i6if4pks557sdqmkpix87wxmsn-gradle-7.6.4"
+        }
+      }
+    },
+    "nodejs@20.": {
+      "last_modified": "2024-08-18T12:44:29Z",
+      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#nodejs_20",
+      "source": "devbox-search",
+      "version": "20.15.1",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/5ni7zrr67nkpyk3rcsbwafyxq2w24rms-nodejs-20.15.1"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/rbsgw2jh1grrhr1hkhzl3brg3dkbx29y-nodejs-20.15.1"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/cbdl0p3mz0yycqig42356mh7a0km1d4r-nodejs-20.15.1"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/v14k93caffbf0xz2g7bqr964grxxqlmj-nodejs-20.15.1"
+        }
+      }
+    },
+    "pulumictl@latest": {
+      "last_modified": "2024-08-18T12:44:29Z",
+      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#pulumictl",
+      "source": "devbox-search",
+      "version": "0.0.46",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/736h9vfarhfgphc5adis40wkrh9qdy0f-pulumictl-0.0.46"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/h6gjvb55gdsm0c2yrfb9ym2alfxl2a4z-pulumictl-0.0.46"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/4wv872apigbz3ajqrjkx5g0yfih0d27l-pulumictl-0.0.46"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/0hwssz2g1ib1n3gkb5q4fnlqz6ri3q7i-pulumictl-0.0.46"
+        }
+      }
+    },
+    "python3@3.11.8": {
+      "last_modified": "2024-04-02T02:53:36Z",
+      "resolved": "github:NixOS/nixpkgs/080a4a27f206d07724b88da096e27ef63401a504#python3",
+      "source": "devbox-search",
+      "version": "3.11.8",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/j0jaqv09421wydqmfawcnwvv2f32q86a-python3-3.11.8"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/m366grr7iy3d47r7ns0p8ppx5z3ghlv6-python3-3.11.8"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/9qhyp2qkb4s5zi1vahj4bjjjmdin6jnz-python3-3.11.8"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/gd3shnza1i50zn8zs04fa729ribr88m9-python3-3.11.8"
+        }
+      }
+    },
+    "yarn@latest": {
+      "last_modified": "2024-08-18T12:44:29Z",
+      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#yarn",
+      "source": "devbox-search",
+      "version": "1.22.22",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/vaylrlzgx5mykq3naphkabgf2vgz51yn-yarn-1.22.22"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/b3lwjiijfrjpq6gsb5zy2wb1f412wgc0-yarn-1.22.22"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/s5jv8v5g12mp4xzwlkdcqw72s4nq1zp3-yarn-1.22.22"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/si89wdnns2qvm0ji57d4ghkcm3wxah2p-yarn-1.22.22"
+        }
+      }
+    }
+  }
+}
