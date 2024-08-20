@@ -130,11 +130,11 @@ func Provider() tfbridge.ProviderInfo {
 		// category/cloud tag helps with categorizing the package in the Pulumi Registry.
 		// For all available categories, see `Keywords` in
 		// https://www.pulumi.com/docs/guides/pulumi-packages/schema/#package.
-		Keywords:   []string{"unobravo", "mysql", "category/cloud"},
-		License:    "Apache-2.0",
-		Homepage:   "https://www.pulumi.com",
-		Repository: "https://github.com/unobravo/pulumi-mysql",
-        TFProviderModuleVersion: "v3",
+		Keywords:                []string{"unobravo", "mysql", "category/cloud"},
+		License:                 "Apache-2.0",
+		Homepage:                "https://www.pulumi.com",
+		Repository:              "https://github.com/unobravo/pulumi-mysql",
+		TFProviderModuleVersion: "v3",
 		// The GitHub Org for the provider - defaults to `terraform-providers`. Note that this should
 		// match the TF provider module's require directive, not any replace directives.
 		GitHubOrg:    "petoju",
