@@ -48,9 +48,19 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
       - name: Install devbox
         uses: jetify-com/devbox-install-action@v0.11.0
         with:
           enable-cache: true
       - name: Build sdks
         run: devbox run -- make build_sdks
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
