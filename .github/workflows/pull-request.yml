@@ -1,4 +1,4 @@
-name: lint
+name: pull-request
 
 on:
   workflow_call:
@@ -55,8 +55,6 @@ jobs:
         uses: jetify-com/devbox-install-action@v0.11.0
         with:
           enable-cache: true
-      - name: Build sdks
-        run: devbox run -- make build_sdks
       - uses: actions/cache@v4
         with:
           path: |
@@ -65,3 +63,5 @@ jobs:
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-go-
+      - name: Build sdks
+        run: devbox run -- make build_sdks
