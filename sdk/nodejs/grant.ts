@@ -13,7 +13,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const jdoeUser = new mysql.User("jdoeUser", {
  *     user: "jdoe",
@@ -37,7 +37,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const developerRole = new mysql.Role("developerRole", {});
  * const developerGrant = new mysql.Grant("developerGrant", {
@@ -56,7 +56,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const jdoe = new mysql.User("jdoe", {
  *     user: "jdoe",

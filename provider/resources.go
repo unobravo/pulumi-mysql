@@ -125,7 +125,7 @@ func Provider() tfbridge.ProviderInfo {
 		// PluginDownloadURL is an optional URL used to download the Provider
 		// for use in Pulumi programs
 		// e.g https://github.com/org/pulumi-provider-name/releases/
-		PluginDownloadURL: "",
+		PluginDownloadURL: "github://api.github.com/unobravo/pulumi-mysql",
 		Description:       "A Pulumi package for creating and managing mysql cloud resources.",
 		// category/cloud tag helps with categorizing the package in the Pulumi Registry.
 		// For all available categories, see `Keywords` in
@@ -150,6 +150,7 @@ func Provider() tfbridge.ProviderInfo {
 			// },
 		},
 		JavaScript: &tfbridge.JavaScriptInfo{
+			PackageName: "@unobravo/pulumi-mysql",
 			// List any npm dependencies and their versions
 			Dependencies: map[string]string{
 				"@pulumi/pulumi": "^3.0.0",

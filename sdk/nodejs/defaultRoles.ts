@@ -14,7 +14,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const readonly = new mysql.Role("readonly", {});
  * const jdoeUser = new mysql.User("jdoeUser", {

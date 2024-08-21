@@ -20,7 +20,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const jdoe = new mysql.User("jdoe", {
  *     host: "example.com",
@@ -35,7 +35,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const nologin = new mysql.User("nologin", {
  *     authPlugin: "mysql_no_login",
@@ -50,7 +50,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const nologin = new mysql.User("nologin", {
  *     authPlugin: "mysql_native_password",
@@ -66,7 +66,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const aadupn = new mysql.User("aadupn", {
  *     aadIdentity: {

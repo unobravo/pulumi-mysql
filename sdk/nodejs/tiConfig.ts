@@ -19,7 +19,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const logLevel = new mysql.TiConfig("logLevel", {
  *     type: "pd",
@@ -33,7 +33,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const logLevel = new mysql.TiConfig("logLevel", {
  *     type: "pd",
@@ -47,7 +47,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const logLevel = new mysql.TiConfig("logLevel", {
  *     instance: "127.0.0.1:2379",
@@ -64,7 +64,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const splitQpsThreshold = new mysql.TiConfig("splitQpsThreshold", {
  *     type: "tikv",
@@ -78,7 +78,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const splitQpsThreshold = new mysql.TiConfig("splitQpsThreshold", {
  *     instance: "127.0.0.1:20180",

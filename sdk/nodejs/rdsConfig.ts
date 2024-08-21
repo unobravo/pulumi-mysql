@@ -15,7 +15,7 @@ import * as utilities from "./utilities";
  * <!--Start PulumiCodeChooser -->
  * ```typescript
  * import * as pulumi from "@pulumi/pulumi";
- * import * as mysql from "@pulumi/mysql";
+ * import * as mysql from "@unobravo/pulumi-mysql";
  *
  * const _this = new mysql.RdsConfig("this", {
  *     binlogRetentionHours: 48,

@@ -1,5 +1,5 @@
 {
-    "name": "@pulumi/mysql",
+    "name": "@unobravo/pulumi-mysql",
     "version": "${VERSION}",
     "description": "A Pulumi package for creating and managing mysql cloud resources.",
     "keywords": [
@@ -23,6 +23,7 @@
     },
     "pulumi": {
         "resource": true,
-        "name": "mysql"
+        "name": "mysql",
+        "server": "github://api.github.com/unobravo/pulumi-mysql"
     }
 }

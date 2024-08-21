@@ -53,6 +53,7 @@ namespace Pulumi.Mysql
             var defaultOptions = new CustomResourceOptions
             {
                 Version = Utilities.Version,
+                PluginDownloadURL = "github://api.github.com/unobravo/pulumi-mysql",
                 AdditionalSecretOutputs =
                 {
                     "plaintextPassword",
