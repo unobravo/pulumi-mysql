@@ -2,7 +2,7 @@
 [![NPM version](https://badge.fury.io/js/%40pulumi%2Fmysql.svg)](https://www.npmjs.com/package/@unobravo/unobravo-mysql)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/pulumi/pulumi-mysql/sdk/v3/go)](https://pkg.go.dev/github.com/unobravo/pulumi-mysql/sdk/go)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[!![Static Badge](https://img.shields.io/badge/Terraform_Provider-v3.0.63-purple)](https://github.com/petoju/terraform-provider-mysql)
+[![Static Badge](https://img.shields.io/badge/Terraform_Provider-v3.0.63-purple)](https://github.com/petoju/terraform-provider-mysql)
 
 # MySQL Resource Provider
 
