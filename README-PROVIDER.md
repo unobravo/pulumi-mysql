@@ -1,6 +1,6 @@
-# Foo Resource Provider
+# Mysql Resource Provider
 
-The Foo Resource Provider lets you manage [Foo](http://example.com) resources.
+The Mysql Resource Provider lets you manage Mysql resources.
 
 ## Installing
 
@@ -11,46 +11,31 @@ This package is available for several languages/platforms:
 To use from JavaScript or TypeScript in Node.js, install using either `npm`:
 
 ```bash
-npm install @pulumi/foo
+npm install @unobravo/pulumi-mysql
 ```
 
 or `yarn`:
 
 ```bash
-yarn add @pulumi/foo
+yarn add @unobravo/pulumi-mysql
 ```
 
 ### Python
 
-To use from Python, install using `pip`:
-
-```bash
-pip install pulumi_foo
-```
+_NOT PUBLISHED_
 
 ### Go
 
 To use from Go, use `go get` to grab the latest version of the library:
 
 ```bash
-go get github.com/pulumi/pulumi-foo/sdk/go/...
+go get github.com/unobravo/pulumi-mysql/sdk/go/...
 ```
 
 ### .NET
 
-To use from .NET, install using `dotnet add package`:
-
-```bash
-dotnet add package Pulumi.Foo
-```
+_NOT PUBLISHED_
 
 ## Configuration
 
-The following configuration points are available for the `foo` provider:
-
-- `foo:apiKey` (environment: `FOO_API_KEY`) - the API key for `foo`
-- `foo:region` (environment: `FOO_REGION`) - the region in which to deploy resources
-
-## Reference
-
-For detailed reference documentation, please visit [the Pulumi registry](https://www.pulumi.com/registry/packages/foo/api-docs/).
+Please refer to the underlying terraform provider [documentation](https://registry.terraform.io/providers/petoju/mysql/latest/docs)
