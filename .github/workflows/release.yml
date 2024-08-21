@@ -54,6 +54,42 @@ jobs:
       matrix:
         goversion:
           - 1.21.x
+  build_sdk:
+    name: Build SDKs
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        language:
+          - nodejs
+          - go
+          # - dotnet
+          # - python
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Install devbox
+        uses: jetify-com/devbox-install-action@v0.11.0
+        with:
+          enable-cache: true
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+      - name: Build SDK
+        run: devbox run -- make build_${{ matrix.language }}
+      - name: Upload SDK
+        uses: ./.github/actions/upload-sdk
+        with:
+          language: ${{ matrix.language }}
+
   publish_sdk:
     name: Publish SDKs
     runs-on: ubuntu-latest
