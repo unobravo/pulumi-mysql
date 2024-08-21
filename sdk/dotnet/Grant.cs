@@ -26,14 +26,14 @@ namespace Pulumi.Mysql
     /// {
     ///     var jdoeUser = new Mysql.User("jdoeUser", new()
     ///     {
-    ///         User = "jdoe",
+    ///         Username = "jdoe",
     ///         Host = "example.com",
     ///         PlaintextPassword = "password",
     ///     });
     /// 
     ///     var jdoeGrant = new Mysql.Grant("jdoeGrant", new()
     ///     {
-    ///         User = jdoeUser.User,
+    ///         User = jdoeUser.Username,
     ///         Host = jdoeUser.Host,
     ///         Database = "app",
     ///         Privileges = new[]
@@ -88,7 +88,7 @@ namespace Pulumi.Mysql
     /// {
     ///     var jdoe = new Mysql.User("jdoe", new()
     ///     {
-    ///         User = "jdoe",
+    ///         Username = "jdoe",
     ///         Host = "example.com",
     ///         PlaintextPassword = "password",
     ///     });
@@ -97,7 +97,7 @@ namespace Pulumi.Mysql
     /// 
     ///     var developerGrant = new Mysql.Grant("developerGrant", new()
     ///     {
-    ///         User = jdoe.User,
+    ///         User = jdoe.Username,
     ///         Host = jdoe.Host,
     ///         Database = "app",
     ///         Roles = new[]
@@ -147,7 +147,7 @@ namespace Pulumi.Mysql
         /// Whether to also give the user privileges to grant the same privileges to other users.
         /// </summary>
         [Output("grant")]
-        public Output<bool?> Grant { get; private set; } = null!;
+        public Output<bool?> CanGrant { get; private set; } = null!;
 
         /// <summary>
         /// The source host of the user. Defaults to "localhost". Conflicts with `role`.
@@ -247,7 +247,7 @@ namespace Pulumi.Mysql
         /// Whether to also give the user privileges to grant the same privileges to other users.
         /// </summary>
         [Input("grant")]
-        public Input<bool>? Grant { get; set; }
+        public Input<bool>? CanGrant { get; set; }
 
         /// <summary>
         /// The source host of the user. Defaults to "localhost". Conflicts with `role`.
@@ -321,7 +321,7 @@ namespace Pulumi.Mysql
         /// Whether to also give the user privileges to grant the same privileges to other users.
         /// </summary>
         [Input("grant")]
-        public Input<bool>? Grant { get; set; }
+        public Input<bool>? CanGrant { get; set; }
 
         /// <summary>
         /// The source host of the user. Defaults to "localhost". Conflicts with `role`.

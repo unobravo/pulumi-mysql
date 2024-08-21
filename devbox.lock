@@ -63,6 +63,7 @@
     },
     "gradle_7@7.6": {
       "last_modified": "2024-08-18T12:44:29Z",
+      "plugin_version": "0.0.1",
       "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#gradle_7",
       "source": "devbox-search",
       "version": "7.6.4",
@@ -121,8 +122,30 @@
         }
       }
     },
+    "python311Packages.pip@latest": {
+      "last_modified": "2024-08-18T12:44:29Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#python311Packages.pip",
+      "source": "devbox-search",
+      "version": "24.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/d32zw3i388z6hlmg2a0ciijz28dg45j9-python3.11-pip-24.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/pn5y18bhjhjcaddqbi2rzrsq2jsgh8b1-python3.11-pip-24.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/142br9sbb8h8vx4wk0xlxfpbsbca9pxh-python3.11-pip-24.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/gz254b88n2cs74vn7r2hpd4zwccmiskl-python3.11-pip-24.0"
+        }
+      }
+    },
     "python3@3.11.8": {
       "last_modified": "2024-04-02T02:53:36Z",
+      "plugin_version": "0.0.3",
       "resolved": "github:NixOS/nixpkgs/080a4a27f206d07724b88da096e27ef63401a504#python3",
       "source": "devbox-search",
       "version": "3.11.8",

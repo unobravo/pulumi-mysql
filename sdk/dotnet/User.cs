@@ -33,7 +33,7 @@ namespace Pulumi.Mysql
     ///     {
     ///         Host = "example.com",
     ///         PlaintextPassword = "password",
-    ///         User = "jdoe",
+    ///         Username = "jdoe",
     ///     });
     /// 
     /// });
@@ -55,7 +55,7 @@ namespace Pulumi.Mysql
     ///     {
     ///         AuthPlugin = "mysql_no_login",
     ///         Host = "example.com",
-    ///         User = "nologin",
+    ///         Username = "nologin",
     ///     });
     /// 
     /// });
@@ -78,7 +78,7 @@ namespace Pulumi.Mysql
     ///         AuthPlugin = "mysql_native_password",
     ///         AuthStringHashed = "*2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19",
     ///         Host = "example.com",
-    ///         User = "nologin",
+    ///         Username = "nologin",
     ///     });
     /// 
     /// });
@@ -104,7 +104,7 @@ namespace Pulumi.Mysql
     ///             Type = "user",
     ///         },
     ///         AuthPlugin = "aad_auth",
-    ///         User = "aliasToUseWhenConnectiong",
+    ///         Username = "aliasToUseWhenConnectiong",
     ///     });
     /// 
     /// });
@@ -178,7 +178,7 @@ namespace Pulumi.Mysql
         /// The name of the user.
         /// </summary>
         [Output("user")]
-        public Output<string> User { get; private set; } = null!;
+        public Output<string> Username { get; private set; } = null!;
 
 
         /// <summary>
@@ -317,7 +317,7 @@ namespace Pulumi.Mysql
         /// The name of the user.
         /// </summary>
         [Input("user", required: true)]
-        public Input<string> User { get; set; } = null!;
+        public Input<string> Username { get; set; } = null!;
 
         public UserArgs()
         {
@@ -412,7 +412,7 @@ namespace Pulumi.Mysql
         /// The name of the user.
         /// </summary>
         [Input("user")]
-        public Input<string>? User { get; set; }
+        public Input<string>? Username { get; set; }
 
         public UserState()
         {

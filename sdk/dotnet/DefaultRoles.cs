@@ -29,13 +29,13 @@ namespace Pulumi.Mysql
     /// 
     ///     var jdoeUser = new Mysql.User("jdoeUser", new()
     ///     {
-    ///         User = "jdoe",
+    ///         Username = "jdoe",
     ///         Host = "%",
     ///     });
     /// 
     ///     var jdoeGrant = new Mysql.Grant("jdoeGrant", new()
     ///     {
-    ///         User = jdoeUser.User,
+    ///         User = jdoeUser.Username,
     ///         Host = jdoeUser.Host,
     ///         Database = "",
     ///         Roles = new[]
@@ -46,7 +46,7 @@ namespace Pulumi.Mysql
     /// 
     ///     var jdoeDefaultRoles = new Mysql.DefaultRoles("jdoeDefaultRoles", new()
     ///     {
-    ///         User = jdoeUser.User,
+    ///         User = jdoeUser.Username,
     ///         Host = jdoeUser.Host,
     ///         Roles = jdoeGrant.Roles,
     ///     });

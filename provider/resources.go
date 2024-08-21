@@ -179,6 +179,24 @@ func Provider() tfbridge.ProviderInfo {
 				"Pulumi": "3.*",
 			},
 		},
+		Resources: map[string]*tfbridge.ResourceInfo{
+			"mysql_user": {
+				Tok: tfbridge.MakeResource(mainPkg, mainMod, "User"),
+				Fields: map[string]*tfbridge.SchemaInfo{
+					"user": {
+						CSharpName: "Username",
+					},
+				},
+			},
+			"mysql_grant": {
+				Tok: tfbridge.MakeResource(mainPkg, mainMod, "Grant"),
+				Fields: map[string]*tfbridge.SchemaInfo{
+					"grant": {
+						CSharpName: "CanGrant",
+					},
+				},
+			},
+		},
 	}
 
 	// MustComputeTokens maps all resources and datasources from the upstream provider into Pulumi.
