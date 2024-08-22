@@ -89,11 +89,9 @@ build_dotnet:: install_plugins tfgen # build the dotnet sdk
 build_go:: install_plugins tfgen # build the go sdk
 	$(WORKING_DIR)/bin/$(TFGEN) go --overlays provider/overlays/go --out sdk/go/
 
-publish_nodejs:: VERSION := $(shell pulumictl get version --language javascript | sed 's/+dirty//')
 publish_nodejs:: build_nodejs
 	npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN} && \
-	cd $(WORKING_DIR)/sdk/nodejs && \
-			sed -i.bak -e "s/\$${VERSION}/$(VERSION)/g" ./package.json && \
+	cd $(WORKING_DIR)/sdk/nodejs/bin && \
 			npm publish
 
 publish_python::
