@@ -1,7 +1,7 @@
 PROJECT_NAME := mysql Package
 
 SHELL            := /bin/bash
-PACK             := pulumi-mysql
+PACK             := mysql
 PROJECT          := github.com/unobravo/pulumi-mysql
 NODE_MODULE_NAME := @unobravo/${PACK}
 TF_NAME          := ${PACK}
