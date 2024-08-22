@@ -92,7 +92,7 @@ build_go:: install_plugins tfgen # build the go sdk
 publish_nodejs:: VERSION := $(shell pulumictl get version --language javascript | sed 's/+dirty//')
 publish_nodejs:: build_nodejs
 	cd $(WORKING_DIR)/sdk/nodejs && \
-			sed -i.bak -e "s/\$${VERSION}/$(VERSION)/g" ./package.json
+			sed -i.bak -e "s/\$${VERSION}/$(VERSION)/g" ./package.json && \
 			npm publish
 
 publish_python::
