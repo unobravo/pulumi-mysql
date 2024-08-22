@@ -57,12 +57,14 @@ jobs:
   build_sdk:
     name: Build SDKs
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.provider-version.outputs.version }}
     strategy:
       fail-fast: true
       matrix:
         language:
           - nodejs
-          - go
+          # - go
           # - dotnet
           # - python
     steps:
@@ -71,6 +73,8 @@ jobs:
         with:
           fetch-depth: 0
           fetch-tags: true
+      - uses: pulumi/provider-version-action@v1
+        id: provider-version
       - name: Install devbox
         uses: jetify-com/devbox-install-action@v0.11.0
         with:
@@ -94,22 +98,18 @@ jobs:
     name: Publish SDKs
     runs-on: ubuntu-latest
     needs: build_sdk
+    env:
+      VERSION: ${{ needs.build_sdk.outputs.version }}
     steps:
       - name: Publish SDKs
-        uses: pulumi/pulumi-package-publisher@v0.0.6
+        uses: pulumi/pulumi-package-publisher@v0.0.20
+        with:
+          version: ${{ needs.build_sdk.outputs.version }}
     strategy:
       fail-fast: true
       matrix:
-        dotnetversion:
-          - 3.1.301
-        goversion:
-          - 1.21.x
-        language:
+        sdk:
           - nodejs
           # - python
           # - dotnet
-          - go
-        nodeversion:
-          - 20.x
-        pythonversion:
-          - "3.9"
+          # - go
