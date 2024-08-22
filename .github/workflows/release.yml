@@ -11,7 +11,6 @@ env:
   # THEN ENSURE THE NPM_REGISTRY_URL IS CHANGED
   NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
   NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-  PUBLISH_NPM: true
   NPM_REGISTRY_URL: https://registry.npmjs.org
   # IF YOU NEED TO PUBLISH A NUGET PACKAGE THEN ENSURE AN NUGET_PUBLISH_KEY
   # SECRET IS SET AND PUBLISH_NUGET: TRUE. IF YOU WANT TO PUBLISH TO AN ALTERNATIVE
@@ -87,29 +86,25 @@ jobs:
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-go-
-      - name: Build SDK
-        run: devbox run -- make build_${{ matrix.language }}
-      - name: Upload SDK
-        uses: ./.github/actions/upload-sdk
-        with:
-          language: ${{ matrix.language }}
+      - name: Publish SDK
+        run: devbox run -- make publish_${{ matrix.language }}
 
-  publish_sdk:
-    name: Publish SDKs
-    runs-on: ubuntu-latest
-    needs: build_sdk
-    env:
-      VERSION: ${{ needs.build_sdk.outputs.version }}
-    steps:
-      - name: Publish SDKs
-        uses: pulumi/pulumi-package-publisher@v0.0.20
-        with:
-          version: ${{ needs.build_sdk.outputs.version }}
-    strategy:
-      fail-fast: true
-      matrix:
-        sdk:
-          - nodejs
-          # - python
-          # - dotnet
-          # - go
+  # publish_sdk:
+  #   name: Publish SDKs
+  #   runs-on: ubuntu-latest
+  #   needs: build_sdk
+  #   env:
+  #     VERSION: ${{ needs.build_sdk.outputs.version }}
+  #   steps:
+  #     - name: Publish SDKs
+  #       uses: pulumi/pulumi-package-publisher@v0.0.20
+  #       with:
+  #         version: ${{ needs.build_sdk.outputs.version }}
+  #   strategy:
+  #     fail-fast: true
+  #     matrix:
+  #       sdk:
+  #         - nodejs
+  #         # - python
+  #         # - dotnet
+  #         # - go

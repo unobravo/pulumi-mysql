@@ -89,6 +89,19 @@ build_dotnet:: install_plugins tfgen # build the dotnet sdk
 build_go:: install_plugins tfgen # build the go sdk
 	$(WORKING_DIR)/bin/$(TFGEN) go --overlays provider/overlays/go --out sdk/go/
 
+publish_nodejs:: build_nodejs
+	cd $(WORKING_DIR)/sdk/nodejs && \
+			npm publish
+
+publish_python::
+	echo "Not implemented" && exit 1
+
+publish_dotnet::
+	echo "Not implemented" && exit 1
+
+publish_go::
+	echo "Not implemented" && exit 1
+
 lint_provider:: provider # lint the provider code
 	cd provider && golangci-lint run -c ../.golangci.yml
 
