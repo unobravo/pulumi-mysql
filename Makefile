@@ -92,6 +92,7 @@ build_go:: install_plugins tfgen # build the go sdk
 publish_nodejs:: build_nodejs
 	npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN} && \
 	cd $(WORKING_DIR)/sdk/nodejs/bin && \
+			sed -i -e "s/+dirty//" ./package.json && \
 			npm publish
 
 publish_python::
