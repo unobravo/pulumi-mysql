@@ -53,11 +53,10 @@ jobs:
       matrix:
         goversion:
           - 1.21.x
+
   publish_sdk:
     name: Publish SDKs
     runs-on: ubuntu-latest
-    outputs:
-      version: ${{ steps.provider-version.outputs.version }}
     strategy:
       fail-fast: true
       matrix:
@@ -72,8 +71,6 @@ jobs:
         with:
           fetch-depth: 0
           fetch-tags: true
-      - uses: pulumi/provider-version-action@v1
-        id: provider-version
       - name: Install devbox
         uses: jetify-com/devbox-install-action@v0.11.0
         with:
