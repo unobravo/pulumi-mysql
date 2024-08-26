@@ -1,8 +1,8 @@
 [![Actions Status](https://github.com/unobravo/pulumi-mysql/workflows/master/badge.svg)](https://github.com/unobravo/pulumi-mysql/actions)
-[![NPM version](https://badge.fury.io/js/%40pulumi%2Fmysql.svg)](https://www.npmjs.com/package/@unobravo/unobravo-mysql)
+[![NPM version](https://badge.fury.io/js/%40pulumi%2Fmysql.svg)](https://www.npmjs.com/package/@unobravo/pulumi-mysql)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/pulumi/pulumi-mysql/sdk/v3/go)](https://pkg.go.dev/github.com/unobravo/pulumi-mysql/sdk/go)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Static Badge](https://img.shields.io/badge/Terraform_Provider-v3.0.63-purple)](https://github.com/petoju/terraform-provider-mysql)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # MySQL Resource Provider
 
@@ -13,7 +13,7 @@ this package, please [install the Pulumi CLI first](https://pulumi.io/).
 
 This package is available in many languages in the standard packaging formats.
 
-### Node.js (Java/TypeScript)
+### Node.js (JavaScript/TypeScript)
 
 To use from JavaScript or TypeScript in Node.js, install using either `npm`:
 
@@ -25,7 +25,7 @@ or `yarn`:
 
 ### Python
 
-> [!NOTE]
+> [!WARNING]
 > NOT PUBLISHED
 
 ### Go
@@ -36,7 +36,7 @@ To use from Go, use `go get` to grab the latest version of the library
 
 ### .NET
 
-> [!NOTE]
+> [!WARNING]
 > NOT PUBLISHED
 
 ## Configuration
@@ -53,9 +53,12 @@ The following configuration points are available:
 
 ## Reasons
 
-This prvider bridge the [petoju/terraform-provider-mysql](https://github.com/petoju/terraform-provider-mysql) terraform provider to pulumi
+This provider bridges [petoju/terraform-provider-mysql](https://github.com/petoju/terraform-provider-mysql) to Pulumi
+
+Currently the official [pulumi-mysql](https://www.pulumi.com/docs/reference/pkg/mysql) uses the [hashicorp/terraform-provider-mysql](https://github.com/hashicorp/terraform-provider-mysql/tree/master) which has been archived in 2021.
+Based on [this issue](https://github.com/pulumi/pulumi-mysql/issues/145), Pulumi is still investigating the migration from an archived terraform provider to a community fork.
 
 ## Reference
 
 
-For further information, please visit [the MySQL provider docs](https://www.pulumi.com/docs/intro/cloud-providers/mysql) or for detailed reference documentation, please visit [the API docs](https://www.pulumi.com/docs/reference/pkg/mysql).
+For further information on the resources supported by the Terraform provider, please visit the [documentation](https://registry.terraform.io/providers/petoju/mysql/3.0.63/docs).
