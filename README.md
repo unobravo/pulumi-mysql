@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/unobravo/pulumi-mysql/workflows/master/badge.svg)](https://github.com/unobravo/pulumi-mysql/actions)
+[![Actions Status](https://github.com/unobravo/pulumi-mysql/actions/workflows/release.yml/badge.svg)](https://github.com/unobravo/pulumi-mysql/actions)
 [![NPM version](https://badge.fury.io/js/%40pulumi%2Fmysql.svg)](https://www.npmjs.com/package/@unobravo/pulumi-mysql)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/pulumi/pulumi-mysql/sdk/v3/go)](https://pkg.go.dev/github.com/unobravo/pulumi-mysql/sdk/go)
 [![Static Badge](https://img.shields.io/badge/Terraform_Provider-v3.0.63-purple)](https://github.com/petoju/terraform-provider-mysql)
