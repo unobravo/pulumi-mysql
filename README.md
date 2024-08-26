@@ -25,8 +25,12 @@ or `yarn`:
 
 ### Python
 
-> [!WARNING]
-> NOT PUBLISHED
+To use from Python, install using `pip`:
+
+    $ pip install git+https://github.com/unobravo/pulumi-mysql.git@v0.0.0#subdirectory=sdk/python
+
+> [!NOTE]
+> NOT PUBLISHED ON PyPI
 
 ### Go
 
@@ -59,6 +63,5 @@ Currently the official [pulumi-mysql](https://www.pulumi.com/docs/reference/pkg/
 Based on [this issue](https://github.com/pulumi/pulumi-mysql/issues/145), Pulumi is still investigating the migration from an archived terraform provider to a community fork.
 
 ## Reference
-
 
 For further information on the resources supported by the Terraform provider, please visit the [documentation](https://registry.terraform.io/providers/petoju/mysql/3.0.63/docs).
