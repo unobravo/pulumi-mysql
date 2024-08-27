@@ -2,8 +2,8 @@
   "lockfile_version": "1",
   "packages": {
     "curl@8": {
-      "last_modified": "2024-08-18T21:16:56Z",
-      "resolved": "github:NixOS/nixpkgs/9aa35efbea27d320d0cdc5f922f0890812affb60#curl",
+      "last_modified": "2024-08-21T20:16:49Z",
+      "resolved": "github:NixOS/nixpkgs/36a9aeaaa17a2d4348498275f9fe530cd4f9e519#curl",
       "source": "devbox-search",
       "version": "8.9.0",
       "systems": {
@@ -42,8 +42,8 @@
       }
     },
     "go@1.21.": {
-      "last_modified": "2024-08-18T12:44:29Z",
-      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#go_1_21",
+      "last_modified": "2024-08-14T11:41:26Z",
+      "resolved": "github:NixOS/nixpkgs/0cb2fd7c59fed0cd82ef858cbcbdb552b9a33465#go_1_21",
       "source": "devbox-search",
       "version": "1.21.13",
       "systems": {
@@ -62,9 +62,8 @@
       }
     },
     "gradle_7@7.6": {
-      "last_modified": "2024-08-18T12:44:29Z",
-      "plugin_version": "0.0.1",
-      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#gradle_7",
+      "last_modified": "2024-08-14T11:41:26Z",
+      "resolved": "github:NixOS/nixpkgs/0cb2fd7c59fed0cd82ef858cbcbdb552b9a33465#gradle_7",
       "source": "devbox-search",
       "version": "7.6.4",
       "systems": {
@@ -83,8 +82,8 @@
       }
     },
     "nodejs@20.": {
-      "last_modified": "2024-08-18T12:44:29Z",
-      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#nodejs_20",
+      "last_modified": "2024-08-14T11:41:26Z",
+      "resolved": "github:NixOS/nixpkgs/0cb2fd7c59fed0cd82ef858cbcbdb552b9a33465#nodejs_20",
       "source": "devbox-search",
       "version": "20.15.1",
       "systems": {
@@ -103,8 +102,8 @@
       }
     },
     "pulumictl@latest": {
-      "last_modified": "2024-08-18T12:44:29Z",
-      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#pulumictl",
+      "last_modified": "2024-08-14T11:41:26Z",
+      "resolved": "github:NixOS/nixpkgs/0cb2fd7c59fed0cd82ef858cbcbdb552b9a33465#pulumictl",
       "source": "devbox-search",
       "version": "0.0.46",
       "systems": {
@@ -123,9 +122,8 @@
       }
     },
     "python311Packages.pip@latest": {
-      "last_modified": "2024-08-18T12:44:29Z",
-      "plugin_version": "0.0.2",
-      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#python311Packages.pip",
+      "last_modified": "2024-08-14T11:41:26Z",
+      "resolved": "github:NixOS/nixpkgs/0cb2fd7c59fed0cd82ef858cbcbdb552b9a33465#python311Packages.pip",
       "source": "devbox-search",
       "version": "24.0",
       "systems": {
@@ -145,7 +143,6 @@
     },
     "python3@3.11.8": {
       "last_modified": "2024-04-02T02:53:36Z",
-      "plugin_version": "0.0.3",
       "resolved": "github:NixOS/nixpkgs/080a4a27f206d07724b88da096e27ef63401a504#python3",
       "source": "devbox-search",
       "version": "3.11.8",
@@ -165,8 +162,8 @@
       }
     },
     "yarn@latest": {
-      "last_modified": "2024-08-18T12:44:29Z",
-      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#yarn",
+      "last_modified": "2024-08-14T11:41:26Z",
+      "resolved": "github:NixOS/nixpkgs/0cb2fd7c59fed0cd82ef858cbcbdb552b9a33465#yarn",
       "source": "devbox-search",
       "version": "1.22.22",
       "systems": {
