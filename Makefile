@@ -1,9 +1,9 @@
-PROJECT_NAME := xyz Package
+PROJECT_NAME := mysql Package
 
 SHELL            := /bin/bash
-PACK             := xyz
-PROJECT          := github.com/pulumi/pulumi-xyz
-NODE_MODULE_NAME := @abc/${PACK}
+PACK             := mysql
+PROJECT          := github.com/unobravo/pulumi-mysql
+NODE_MODULE_NAME := @unobravo/${PACK}
 TF_NAME          := ${PACK}
 PROVIDER_PATH    := provider
 VERSION_PATH     := ${PROVIDER_PATH}/pkg/version.Version
@@ -17,7 +17,7 @@ TESTPARALLELISM := 4
 WORKING_DIR     := $(shell pwd)
 
 OS := $(shell uname)
-EMPTY_TO_AVOID_SED := 
+EMPTY_TO_AVOID_SED :=
 
 prepare::
 	@if test -z "${NAME}"; then echo "NAME not set"; exit 1; fi
@@ -56,7 +56,7 @@ tfgen:: install_plugins
 provider:: tfgen install_plugins # build the provider binary
 	(cd provider && go build -o $(WORKING_DIR)/bin/${PROVIDER} -ldflags "-X ${PROJECT}/${VERSION_PATH}=${VERSION}" ${PROJECT}/${PROVIDER_PATH}/cmd/${PROVIDER})
 
-build_sdks:: install_plugins provider build_nodejs build_python build_go build_dotnet # build all the sdks
+build_sdks:: install_plugins provider build_nodejs build_go build_python build_dotnet # build all the sdks
 
 build_nodejs:: VERSION := $(shell pulumictl get version --language javascript)
 build_nodejs:: install_plugins tfgen # build the node sdk
@@ -88,6 +88,21 @@ build_dotnet:: install_plugins tfgen # build the dotnet sdk
 
 build_go:: install_plugins tfgen # build the go sdk
 	$(WORKING_DIR)/bin/$(TFGEN) go --overlays provider/overlays/go --out sdk/go/
+
+publish_nodejs:: build_nodejs
+	npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN} && \
+	cd $(WORKING_DIR)/sdk/nodejs/bin && \
+			sed -i -e "s/+dirty//" ./package.json && \
+			npm publish
+
+publish_python::
+	echo "Not implemented" && exit 1
+
+publish_dotnet::
+	echo "Not implemented" && exit 1
+
+publish_go::
+	echo "Not implemented" && exit 1
 
 lint_provider:: provider # lint the provider code
 	cd provider && golangci-lint run -c ../.golangci.yml

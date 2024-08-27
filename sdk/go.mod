@@ -1,3 +1,3 @@
-module github.com/pulumi/pulumi-xyz/sdk
+module github.com/unobravo/pulumi-mysql/sdk
 
 go 1.17

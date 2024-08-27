@@ -1,0 +1,73 @@
+{
+    "auto-aliasing": {
+        "resources": {
+            "mysql_database": {
+                "current": "mysql:index/database:Database"
+            },
+            "mysql_default_roles": {
+                "current": "mysql:index/defaultRoles:DefaultRoles",
+                "fields": {
+                    "roles": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "mysql_global_variable": {
+                "current": "mysql:index/globalVariable:GlobalVariable"
+            },
+            "mysql_grant": {
+                "current": "mysql:index/grant:Grant",
+                "fields": {
+                    "privileges": {
+                        "maxItemsOne": false
+                    },
+                    "roles": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "mysql_rds_config": {
+                "current": "mysql:index/rdsConfig:RdsConfig"
+            },
+            "mysql_role": {
+                "current": "mysql:index/role:Role"
+            },
+            "mysql_sql": {
+                "current": "mysql:index/sql:Sql"
+            },
+            "mysql_ti_config": {
+                "current": "mysql:index/tiConfig:TiConfig"
+            },
+            "mysql_user": {
+                "current": "mysql:index/user:User",
+                "fields": {
+                    "aad_identity": {
+                        "maxItemsOne": true
+                    }
+                }
+            },
+            "mysql_user_password": {
+                "current": "mysql:index/userPassword:UserPassword"
+            }
+        },
+        "datasources": {
+            "mysql_databases": {
+                "current": "mysql:index/getDatabases:getDatabases",
+                "fields": {
+                    "databases": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "mysql_tables": {
+                "current": "mysql:index/getTables:getTables",
+                "fields": {
+                    "tables": {
+                        "maxItemsOne": false
+                    }
+                }
+            }
+        }
+    },
+    "auto-settings": {}
+}
