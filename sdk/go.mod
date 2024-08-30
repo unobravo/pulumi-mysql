@@ -1,6 +1,8 @@
 module github.com/unobravo/pulumi-mysql/sdk
 
-go 1.17
+go 1.21.11
+
+toolchain go1.21.13
 
 require (
 	github.com/blang/semver v3.5.1+incompatible
