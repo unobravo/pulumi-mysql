@@ -1,3 +1,0 @@
-upstream-provider-name: terraform-provider-mysql
-upstream-provider-org: petoju
-pr-reviewers: "@unobravo/plat"
