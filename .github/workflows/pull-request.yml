@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-go@v4
         with:
           # The versions of golangci-lint and setup-go here cross-depend and need to update together.
-          go-version: 1.21
+          go-version: 1.24
           # Either this action or golangci-lint needs to disable the cache
           cache: false
       - name: disarm go:embed directives to enable lint
@@ -39,7 +39,7 @@ jobs:
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v3
         with:
-          version: v1.54.1
+          version: v1.64.8
           working-directory: provider
           skip-pkg-cache: true
   build:
@@ -52,9 +52,10 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
       - name: Install devbox
-        uses: jetify-com/devbox-install-action@v0.11.0
+        uses: jetify-com/devbox-install-action@v0.15.0
         with:
           enable-cache: true
+          devbox-version: 0.17.2
       - uses: actions/cache@v4
         with:
           path: |
